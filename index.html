@@ -1,22 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Confession 💗</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Dani ☁️</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(180deg, #fde7f3, #eaf7ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 18px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 720px;
+      background: #ffffff;
+      padding: 26px;
+      border-radius: 30px;
+      box-shadow: 0 20px 45px rgba(180, 160, 220, 0.35);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cloud {
+      position: absolute;
+      background: #ffffff;
+      border-radius: 60px;
+      opacity: 0.9;
+      animation: float 12s infinite ease-in-out;
+    }
+
+    .cloud.one {
+      width: 140px;
+      height: 50px;
+      top: 30px;
+      left: -60px;
+    }
+
+    .cloud.two {
+      width: 190px;
+      height: 65px;
+      top: 120px;
+      right: -80px;
+      animation-delay: 3s;
+    }
+
+    .cloud.three {
+      width: 120px;
+      height: 45px;
+      bottom: 80px;
+      left: -50px;
+      animation-delay: 6s;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .header h1 {
+      color: #e89ac7;
+      font-size: 2rem;
+      margin-bottom: 6px;
+    }
+
+    .header p {
+      color: #8fbce8;
+      font-size: 1rem;
+    }
+
+    .cinn-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 22px 0;
+    }
+
+    .cinn-wrap img {
+      width: 155px;
+      max-width: 70%;
+      margin-bottom: 10px;
+    }
+
+    .bubble {
+      background: linear-gradient(135deg, #fde7f3, #eaf7ff);
+      color: #6f8fbf;
+      padding: 14px 18px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      text-align: center;
+      max-width: 90%;
+      position: relative;
+    }
+
+    .bubble::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 8px 8px 0 8px;
+      border-style: solid;
+      border-color: #fde7f3 transparent transparent transparent;
+    }
+
+    .message {
+      color: #555;
+      line-height: 1.9;
+      font-size: 1.02rem;
+      margin-top: 15px;
+      white-space: pre-line;
+    }
+
+    .end {
+      margin-top: 30px;
+    }
+
+    .footer {
+      margin-top: 25px;
+      text-align: center;
+      color: #8fbce8;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 480px) {
+      .header h1 {
+        font-size: 1.7rem;
+      }
+
+      .message {
+        font-size: 0.95rem;
+      }
+
+      .cinn-wrap img {
+        width: 135px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-  <h1>💌 A Message For You 💌</h1>
+  <div class="card">
+    <div class="cloud one"></div>
+    <div class="cloud two"></div>
+    <div class="cloud three"></div>
 
-  <img src="dani.jpg" class="cinnamoroll">
+    <div class="header">
+      <h1>Hi Dani ☁️</h1>
+      <p>this might be unexpected…</p>
+    </div>
 
-  <button onclick="showMessage()">Click Me 🫶</button>
+    <div class="cinn-wrap">
+      <img src="dana.jpg">
+      <div class="bubble">
+        Cinnamoroll says:<br>
+        “This is important 🩵”
+      </div>
+    </div>
 
-  <div id="message" class="hidden"></div>
-</div>
+    <div class="message">
+HI DANI, might be super unexpected pero KASI, I'd like to tell you na sana na yk ewan ko if napapansin mo pero I like you, LIKE EWAN WHHSHAHAHAHA, naging crush lang kasi kita nung naging mutuals kita sa isang account na pang ig moots ko. Hindi kita kilala irl pero you're so pretty and adorable on your pictures and I like how your glasses fit you, I MEAN THEY DON'T JUST FIT YOU YK, it's like your glasses is you, you're exactly, tas triny kita add dito sa main ko which is inaccept mo naman, TAS NAGULAT NGA KO NAGREPLY KA SA STORY KO NON, yung baby pics ko eh kaya ko lang naman inistory yon kasi inistory mo din, and then ayun we talked and then u said nice talking to you, akala ko hanggang dun nalang:/, ewan ko if nakita mo ba pero nagnotes pa ko non ng "pwede more pa po?" HWHHAHAHAHAHAHHA tas kinabukasan nagulat ulit ako nagchat ka, tas nag dirediretso na huhuhu YUN LANG. I like you, and I love how I'm getting to know you more and more which makes me like you even more, Sana hindi po maging weird na gusto ka ng mas matanda sayo, I DIDN'T KNOW TALAGA, akala ko kasi same age lang pero ayun lang. Sana magkamukha po tayo ng feelings babye
+    </div>
 
-<script src="script.js"></script>
+    <div class="cinn-wrap end">
+      <img src="dani.jpg">
+      <div class="bubble">
+        “Good luck ☁️💗”
+      </div>
+    </div>
+
+    <div class="footer">
+      THAT’S ALL ☁️ BYE BYE
+    </div>
+  </div>
+
 </body>
 </html>
