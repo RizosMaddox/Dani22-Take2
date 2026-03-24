@@ -1,25 +1,36 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   background: linear-gradient(to bottom, #ffd6e7, #fff);
   text-align: center;
-  overflow-x: hidden;
 }
 
+html, body {
+  height: 100%;
+}
+
+
 .container {
-  margin-top: 50px;
+  max-width: 500px;
+  margin: 40px auto;
   padding: 20px;
 }
 
 h1 {
   color: #ff69b4;
+  font-size: 22px;
+}
+
+.cinnamoroll {
+  width: 130px;
+  margin: 15px 0;
 }
 
 button {
   background: #ff8fab;
   border: none;
-  padding: 15px 25px;
-  font-size: 18px;
+  padding: 12px 20px;
+  font-size: 16px;
   border-radius: 20px;
   color: white;
   cursor: pointer;
@@ -30,45 +41,30 @@ button:hover {
   background: #ff4d88;
 }
 
+#message {
+  margin-top: 20px;
+  background: #fff;
+  padding: 18px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  color: #444;
+  line-height: 1.5;
+  font-size: 14px;
+  min-height: 100px;
+}
+
 .hidden {
   display: none;
 }
 
-#message {
-  margin-top: 20px;
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  color: #444;
+#message::after {
+  content: "|";
+  animation: blink 1s infinite;
+  margin-left: 3px;
 }
 
-.cinnamoroll {
-  width: 150px;
-  margin: 20px 0;
-}
-
-.hearts::before,
-.hearts::after {
-  content: "💗 💕 💖 💘";
-  position: fixed;
-  width: 100%;
-  animation: float 10s linear infinite;
-  font-size: 24px;
-}
-
-.hearts::after {
-  animation-delay: 5s;
-}
-
-@keyframes float {
-  from {
-    transform: translateY(100vh);
-  }
-  to {
-    transform: translateY(-10vh);
-  }
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
