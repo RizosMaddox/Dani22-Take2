@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #ffd6e7, #fff);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+h1 {
+  color: #ff69b4;
+}
+
+button {
+  background: #ff8fab;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff4d88;
+}
+
+.hidden {
+  display: none;
+}
+
+#message {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: #444;
+}
+
+.cinnamoroll {
+  width: 150px;
+  margin: 20px 0;
+}
+
+.hearts::before,
+.hearts::after {
+  content: "💗 💕 💖 💘";
+  position: fixed;
+  width: 100%;
+  animation: float 10s linear infinite;
+  font-size: 24px;
+}
+
+.hearts::after {
+  animation-delay: 5s;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(-10vh);
+  }
+}
